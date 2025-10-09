@@ -2,11 +2,10 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: nasu-suwayomi_web_1
+      APP_HOST: nasu-suwayomi_server_1
       APP_PORT: 3000
-      PROXY_AUTH_ADD: 'false'
     container_name: nasu-suwayomi_app_proxy_1
-  web:
+  server:
     image: >-
       ghcr.io/suwayomi/suwayomi-server:preview
     restart: on-failure
@@ -16,4 +15,4 @@ services:
       TZ: Europe/London
       PUID: 1000
       PGID: 1000
-    container_name: nasu-suwayomi_web_1
+    container_name: nasu-suwayomi_server_1
