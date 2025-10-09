@@ -9,7 +9,7 @@ services:
       APP_PORT: 4848
     
   web:
-    image: ghcr.io/meeb/tubesync:latest@sha256:72687dbfb53bb7482592de21e45e475ce2f96cf38402a2b698e31e044856c6b4
+    image: ghcr.io/meeb/tubesync:v0.15.10@sha256:5310726d930d6f99df39ed1c78afd6f5b3d2b3ab675cadf464c25bd479561521
     environment:
       - TZ=Europe/London
       - PUID=1000
