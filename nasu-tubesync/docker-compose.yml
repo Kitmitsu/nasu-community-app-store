@@ -5,10 +5,10 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: nasu-tubesync_web_1
+      APP_HOST: nasu-tubesync_server_1
       APP_PORT: 4848
     
-  web:
+  server:
     image: ghcr.io/meeb/tubesync:v0.15.10@sha256:5310726d930d6f99df39ed1c78afd6f5b3d2b3ab675cadf464c25bd479561521
     environment:
       - TZ=Europe/London
