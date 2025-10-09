@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: nasu-suwayomi_1
+      APP_PORT: 4567
+    
+  server:
+    image: ghcr.io/suwayomi/suwayomi-server:preview
+    environment:
+      - TZ=Europe/London
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/home/suwayomi/.local/share/Tachidesk
+    ports:
+      - "4567:4567"
+    restart: on-failure:3
+    user: "1000:1000"
+    init: true
