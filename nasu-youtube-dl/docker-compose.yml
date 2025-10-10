@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: nasu-youtube-dl_server_1
+      APP_PORT: 8080
+    
+  server:
+    image: jeeaaasustest/youtube-dl:v2025.09.26@sha256:68691eed46466d4117f1543edca00a214989703d6d6143229b511ae2e025d74f
+    environment:
+      - TZ=Europe/London
+      - youtubedl_webui=true
+    volumes:
+      - ${APP_DATA_DIR}/youtube-dl_data:/config
+      - ${APP_DATA_DIR}/downloads:/config
+    user: "1000:1000"
+    init: true
