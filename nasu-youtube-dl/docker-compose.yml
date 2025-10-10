@@ -13,8 +13,10 @@ services:
     environment:
       - TZ=Europe/London
       - youtubedl_webui=true
+      - PUID=1000
+      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/youtube-dl_data:/config
-      - ${APP_DATA_DIR}/downloads:/downloads
+      - ${UMBREL_ROOT}/home/Downloads/tube:/downloads
 #    user: "1000:1000"
 #    init: true
