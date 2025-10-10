@@ -16,6 +16,6 @@ services:
 #      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/tubesync-config:/config
-      - ${UMBREL_ROOT}/home/Downloads/tubesync-downloads:/downloads
+      - ${APP_DATA_DIR}/tubesync-config/media:/downloads:rw
 #    user: "1000:1000"
 #    init: true
