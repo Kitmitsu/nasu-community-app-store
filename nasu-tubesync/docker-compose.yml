@@ -12,10 +12,10 @@ services:
     image: ghcr.io/meeb/tubesync:v0.15.10@sha256:5310726d930d6f99df39ed1c78afd6f5b3d2b3ab675cadf464c25bd479561521
     environment:
       - TZ=Europe/London
-      - PUID=1000
-      - PGID=1000
+#      - PUID=1000
+#      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/tubesync-config:/config
       - ${UMBREL_ROOT}/home/Downloads/tubesync-downloads:/downloads
-    user: "1000:1000"
-    init: true
+#    user: "1000:1000"
+#    init: true
