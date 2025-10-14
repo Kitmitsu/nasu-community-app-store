@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: nasu-maintainerr_server_1
+      APP_PORT: 6246
+    
+  server:
+    image: ghcr.io/jorenn92/maintainerr:2.19@sha256:bee84707edaf589cda3d18b6813cbfe3a137b52786210c3a28190e10910c1240
+    volumes:
+      - ${APP_DATA_DIR}:/opt/data
+    environment:
+      - TZ=Europe/London
+    user: "1000:1000"
+    init: true
