@@ -20,11 +20,8 @@ services:
     init: true
     restart: on-failure
 
-  server:
+  flaresolverr:
     image: ghcr.io/thephaseless/byparr:latest
-    container_name: flaresolverr
     environment:
       - TZ=Europe/London
-    user: "1000:1000"
-    init: true
     restart: on-failure
