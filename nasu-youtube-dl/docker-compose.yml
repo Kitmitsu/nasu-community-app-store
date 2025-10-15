@@ -18,5 +18,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/youtube-dl_data:/config
       - ${UMBREL_ROOT}/home/Downloads/tube:/downloads
+    restart: on-failure
 #    user: "1000:1000"
 #    init: true

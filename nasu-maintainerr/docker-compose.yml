@@ -16,3 +16,4 @@ services:
       - TZ=Europe/London
     user: "1000:1000"
     init: true
+    restart: on-failure

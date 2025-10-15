@@ -17,5 +17,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/tubesync-config:/config
       - ${APP_DATA_DIR}/tubesync-config/media:/downloads:rw
+    restart: on-failure
 #    user: "1000:1000"
 #    init: true
