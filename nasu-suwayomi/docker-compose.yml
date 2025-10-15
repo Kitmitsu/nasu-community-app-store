@@ -12,14 +12,6 @@ services:
     image: ghcr.io/suwayomi/suwayomi-server:v2.1.1867@sha256:acad9ea1cbb968bc95477a69e32dbc682b710a00ed6e7b06f0eb167caf382e81
     environment:
       - TZ=Europe/London
-      - FLARESOLVERR_ENABLED=true
-      - FLARESOLVERR_URL=http://flaresolverr:8191
     volumes:
       - ${APP_DATA_DIR}/data/config:/home/suwayomi/.local/share/Tachidesk:rw
-    restart: on-failure
-
-  flaresolverr:
-    image: ghcr.io/thephaseless/byparr:latest
-    environment:
-      - TZ=Europe/London
     restart: on-failure
