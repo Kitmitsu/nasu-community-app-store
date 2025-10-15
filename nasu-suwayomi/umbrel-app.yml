@@ -4,7 +4,7 @@ name: Suwayomi
 tagline: Replace this tagline with your app's tagline
 icon: https://raw.githubusercontent.com/Suwayomi/Suwayomi-Server/master/server/src/main/resources/icon/faviconlogo.png
 category: Development
-version: "1.0.2"
+version: "1.0.3"
 port: 4568
 description: >-
   Add your app's description here.
