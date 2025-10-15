@@ -4,7 +4,7 @@ name: Maintainerr
 tagline: Replace this tagline with your app's tagline
 icon: https://docs.maintainerr.info/latest/images/logo_icon.svg
 category: Development
-version: "1.0.0"
+version: "1.0.1"
 port: 6247
 description: >-
   Add your app's description here.

@@ -4,7 +4,7 @@ name: Youtube-DL
 tagline: Replace this tagline with your app's tagline
 icon: https://user-images.githubusercontent.com/55890376/187068580-eabf12eb-cfce-49cb-a026-664087963ffe.png
 category: Development
-version: "1.0.0"
+version: "1.0.1"
 port: 8085
 description: >-
   Add your app's description here.
