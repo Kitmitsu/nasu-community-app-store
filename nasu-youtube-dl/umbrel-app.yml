@@ -2,7 +2,7 @@ manifestVersion: 1
 id: nasu-youtube-dl
 name: Youtube-DL
 tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
+icon: https://user-images.githubusercontent.com/55890376/187068580-eabf12eb-cfce-49cb-a026-664087963ffe.png
 category: Development
 version: "1.0.0"
 port: 8085
