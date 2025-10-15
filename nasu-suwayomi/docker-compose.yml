@@ -16,8 +16,6 @@ services:
       - FLARESOLVERR_URL=http://flaresolverr:8191
     volumes:
       - ${APP_DATA_DIR}/data/config:/home/suwayomi/.local/share/Tachidesk:rw
-    user: "1000:1000"
-    init: true
     restart: on-failure
 
   flaresolverr:
