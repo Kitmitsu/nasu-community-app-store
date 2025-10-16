@@ -12,6 +12,8 @@ services:
     image: ghcr.io/suwayomi/suwayomi-server:v2.1.1867@sha256:acad9ea1cbb968bc95477a69e32dbc682b710a00ed6e7b06f0eb167caf382e81
     environment:
       - TZ=Europe/London
+      - PUID=1000
+      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/config:/home/suwayomi/.local/share/Tachidesk:rw
     user: "1000:1000"
