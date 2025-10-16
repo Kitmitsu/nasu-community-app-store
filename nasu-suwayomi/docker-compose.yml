@@ -12,10 +12,16 @@ services:
     image: ghcr.io/suwayomi/suwayomi-server:v2.1.1867@sha256:acad9ea1cbb968bc95477a69e32dbc682b710a00ed6e7b06f0eb167caf382e81
     environment:
       - TZ=Europe/London
-      - PUID=1000
-      - PGID=1000
+      - FLARESOLVERR_ENABLED=true
+      - FLARESOLVERR_URL=http://flaresolverr:8191
     volumes:
-      - ${APP_DATA_DIR}/data/config:/home/suwayomi/.local/share/Tachidesk:rw
+      - ${APP_DATA_DIR}/data/config:/home/suwayomi/.local/share/Tachidesk
     user: "1000:1000"
     init: true
     restart: on-failure
+
+  flaresolverr:
+    image: ghcr.io/thephaseless/byparr:latest
+    environment:
+      - TZ=Etc/UTC # Use TZ database name from https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    restart: unless-stopped
