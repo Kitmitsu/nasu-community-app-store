@@ -13,8 +13,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
       - ${APP_DATA_DIR}/.env:/app/.env
+    environment:
+      - TZ=Europe/London
     user: "1000:1000"
     init: true
     restart: on-failure
-    env_file:
-      - .env
