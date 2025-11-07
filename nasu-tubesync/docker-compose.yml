@@ -16,7 +16,7 @@ services:
 #      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/tubesync-config:/config
-      - ${UMBREL_ROOT}/home/Downloads:/downloads:rw
+      - ${UMBREL_ROOT}/home/Downloads/youtube:/downloads:rw
     restart: on-failure
 #    user: "1000:1000"
 #    init: true
