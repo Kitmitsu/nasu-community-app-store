@@ -7,6 +7,7 @@ services:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: nasu-suwayomi_web_1
       APP_PORT: 4567
+      PROXY_AUTH_ADD: 'false'
     
   web:
     image: ghcr.io/suwayomi/suwayomi-server:v2.1.1867@sha256:acad9ea1cbb968bc95477a69e32dbc682b710a00ed6e7b06f0eb167caf382e81
