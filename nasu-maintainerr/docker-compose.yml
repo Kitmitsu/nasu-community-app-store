@@ -9,7 +9,7 @@ services:
       APP_PORT: 6246
     
   server:
-    image: ghcr.io/jorenn92/maintainerr:latest
+    image: ghcr.io/maintainerr/maintainerr:latest
     volumes:
       - ${APP_DATA_DIR}:/opt/data
     environment:
