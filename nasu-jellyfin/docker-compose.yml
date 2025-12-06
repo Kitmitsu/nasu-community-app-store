@@ -18,7 +18,7 @@ services:
       - UMASK=002
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${UMBREL_ROOT}/network/192.168.1.171/nas/Animu:/data
+      - ${UMBREL_ROOT}/network/192.168.1.171/nas/Animu:/data:ro
     restart: unless-stopped
 #    user: "1000:1000"
 #    init: true
