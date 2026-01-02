@@ -4,7 +4,7 @@ name: Pulsarr
 tagline: Replace this tagline with your app's tagline
 icon: https://raw.githubusercontent.com/jamcalli/pulsarr/master/assets/icons/pulsarr.svg
 category: Development
-version: "1.0.1"
+version: "1.0.2"
 port: 3003
 description: >-
   Add your app's description here.
