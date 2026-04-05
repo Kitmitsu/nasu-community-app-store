@@ -2,9 +2,9 @@ manifestVersion: 1
 id: nasu-maintainerr
 name: Maintainerr
 tagline: Replace this tagline with your app's tagline
-icon: https://docs.maintainerr.info/latest/images/logo_icon.svg
+icon: https://maintainerr.info/_astro/logo.BGPMfaEV_1CtmJ9.svg
 category: Development
-version: "1.0.3"
+version: "1.0.4"
 port: 6247
 description: >-
   Add your app's description here.
