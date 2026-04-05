@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_ADD: 'false'
     
   server:
-    image: lakker/pulsarr:latest
+    image: lakker/pulsarr:v0.11.5
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
       - ${APP_DATA_DIR}/.env:/app/.env
