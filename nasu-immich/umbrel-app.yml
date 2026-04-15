@@ -1,30 +1,83 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: nasu-immich
-name: Immich N
-tagline: Replace this tagline with your app's tagline
-icon: https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo.svg
-category: Development
-version: "1.0.1"
-port: 2283
+category: files
+name: Immich
+version: "v1.0.1"
+tagline: High-performance photo and video backup solution
 description: >-
-  Add your app's description here.
+  An open-source and high-performance self-hosted backup solution for the videos and photos on your mobile device
 
 
-  You can also add newlines!
+  ⚠️ Immich is under very active development. Expect bugs and changes. Do not use it as the only way to store your photos and videos!
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+
+  Features:
+
+  - Upload and view videos and photos
+
+  - Auto backup when the app is opened
+
+  - Selective album(s) for backup
+
+  - Download photos and videos to a local device
+
+  - Multi-user support
+
+  - Album and Shared albums
+
+  - Scrubbable/draggable scrollbar
+
+  - Support RAW (HEIC, HEIF, DNG, Apple ProRaw)
+
+  - Metadata view (EXIF, map)
+
+  - Search by metadata, objects and image tags
+
+  - Administrative functions (user management)
+
+  - Background backup
+
+  - Virtual scroll
+
+  - OAuth support
+
+  - LivePhoto backup and playback
+
+  - User-defined storage structure
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  ⚠️ As usual, please check that your mobile app is compatible with this release of Immich.
+
+
+  This release includes new features and bug fixes. Highlights include:
+    - Added support for helmet/Content Security Policy (CSP) configuration via the IMMICH_HELMET_FILE environment variable
+    - Added ability to create a new face/person on the fly in the face tag editor
+    - Added "Remove from album" action in the asset viewer
+    - Added "Move to locked folder" action in the folder view
+    - Added keyboard shortcuts for the photo editor (press E to open, [ and ] to rotate, ENTER to save)
+    - Improved duplicate resolution - server now automatically suggests which asset to keep and syncs metadata
+    - Version checks now use Immich's own infrastructure instead of GitHub
+    - Fixed live photo and video downloads in Safari being overwritten
+    - Fixed XSS vulnerability in the panorama photo viewer
+    - Fixed external library import issues
+    - Fixed people search not showing results for 3 or fewer characters
+    - Fixed rate limiting and deduplication for version checks
+
+
+  Full release notes are found at https://github.com/immich-app/immich/releases
+developer: Alex Tran
+website: https://www.immich.app
 dependencies: []
+repo: https://github.com/immich-app/immich
+support: https://github.com/immich-app/immich/discussions
+port: 2283
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+permissions:
+  - GPU
+submitter: levma
+submission: https://github.com/getumbrel/umbrel-apps/pull/239
