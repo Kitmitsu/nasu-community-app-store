@@ -2,9 +2,9 @@ manifestVersion: 1
 id: nasu-immich
 name: Immich N
 tagline: Replace this tagline with your app's tagline
-icon: https://github.com/immich-app/immich/blob/main/design/immich-logo.svg
+icon: https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo.svg
 category: Development
-version: "1.0.0"
+version: "1.0.1"
 port: 2283
 description: >-
   Add your app's description here.
