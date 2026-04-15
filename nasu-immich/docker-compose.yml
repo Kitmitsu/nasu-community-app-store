@@ -43,7 +43,7 @@ services:
       - redis
       - postgres
     restart: on-failure
-    container_name: immich_server_1
+    container_name: nasu-immich_server_1
     devices:
       - /dev/dri
   machine-learning:
@@ -65,7 +65,7 @@ services:
       PUBLIC_LOGIN_PAGE_MESSAGE: ''
       IMMICH_MACHINE_LEARNING_URL: http://immich_machine-learning_1:3003
     restart: on-failure
-    container_name: immich_machine-learning_1
+    container_name: nasu-immich_machine-learning_1
     devices:
       - /dev/dri
   redis:
@@ -75,7 +75,7 @@ services:
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/redis:/data
-    container_name: immich_redis_1
+    container_name: nasu-immich_redis_1
     devices:
       - /dev/dri
   postgres:
@@ -101,6 +101,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
     restart: on-failure
-    container_name: immich_postgres_1
+    container_name: nasu-immich_postgres_1
     devices:
       - /dev/dri
